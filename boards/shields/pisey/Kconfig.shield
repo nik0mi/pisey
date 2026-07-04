@@ -1,0 +1,8 @@
+config SHIELD_PISEY_LEFT
+    def_bool $(shields_list_contains,pisey_left)
+
+config SHIELD_PISEY_RIGHT
+    def_bool $(shields_list_contains,pisey_right)
+
+config SHIELD_PISEY_DONGLE
+    def_bool $(shields_list_contains,pisey_dongle)
