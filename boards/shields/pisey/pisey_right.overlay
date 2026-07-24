@@ -1,9 +1,11 @@
 #include "pisey.dtsi"
+#include "pisey_esb_addr.dtsi"
+/ { chosen { zmk,esb-self = &right; }; };
 
 / {
     kscan0: kscan0 {
         compatible = "zmk,kscan-gpio-matrix";
-                diode-direction = "row2col";
+        diode-direction = "row2col";
         wakeup-source;
 
         col-gpios
@@ -30,4 +32,3 @@
 &physical_layout_pisey {
     kscan = <&kscan0>;
 };
-

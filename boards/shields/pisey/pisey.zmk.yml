@@ -1,0 +1,12 @@
+file_format: "1"
+id: pisey
+name: pisey
+type: shield
+url: https://github.com/anomalyco/keyboards
+requires:
+  - pro_micro
+features:
+  - keys
+siblings:
+  - pisey_left
+  - pisey_right
