@@ -1,0 +1,28 @@
+/ {
+    esb_link {
+        compatible = "zmk,split-esb";
+        base-address = [C6 D9 A3 7B];
+
+        tx-power-dbm = <8>;
+        use-fast-ramp-up;
+        retransmit-delay-us = <300>;
+        idle-keepalive-ms = <2000>;
+        peripheral-timeout-ms = <10000>;
+
+        hop-channels = [49 51 53 55 57 59 61 82 84 86 88 90 92 94 96 98];
+        hop-anchors = [53 59 88];
+
+        peripherals {
+            left: peripheral_left {
+                pipe = <0>;
+                prefix = <0x5A>;
+                weight = <1>;
+            };
+            right: peripheral_right {
+                pipe = <1>;
+                prefix = <0xB4>;
+                weight = <1>;
+            };
+        };
+    };
+};

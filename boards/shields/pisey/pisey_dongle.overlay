@@ -1,6 +1,12 @@
 #include "pisey.dtsi"
+#include "pisey_esb_addr.dtsi"
 
 / {
+    chosen {
+        zmk,kscan = &kscan_dongle;
+        zmk,matrix_transform = &matrix_transform0;
+    };
+
     kscan_dongle: kscan_dongle {
         compatible = "zmk,kscan-mock";
         columns = <0>;
@@ -12,4 +18,3 @@
 &physical_layout_pisey {
     kscan = <&kscan_dongle>;
 };
-

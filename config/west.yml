@@ -1,14 +1,25 @@
 manifest:
-  defaults:
-    revision: v0.3
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    # Additional modules containing boards/shields/custom code can be listed here as well
-    # See https://docs.zephyrproject.org/3.2.0/develop/west/manifest.html#projects
+    - name: badjeff
+      url-base: https://github.com/badjeff
+    - name: damex
+      url-base: https://github.com/damex
+    - name: charlesmst
+      url-base: https://github.com/charlesmst
+
   projects:
     - name: zmk
-      remote: zmkfirmware
+      remote: charlesmst
+      revision: feat/deskhop-sync
       import: app/west.yml
+    - name: zmk-behavior-battery-percentage-printer
+      remote: badjeff
+      revision: main
+    - name: zmk-feature-split-esb
+      remote: damex
+      revision: v0.3.6
+      import: true
   self:
     path: config
