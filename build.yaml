@@ -2,6 +2,8 @@
 include:
   - board: nice_nano
     shield: pisey_dongle
+    snippet: studio-rpc-usb-uart
+    cmake-args: -DCONFIG_ZMK_STUDIO=y
     artifact-name: pisey_dongle
 
   - board: nice_nano
