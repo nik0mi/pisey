@@ -6,15 +6,6 @@ config ZMK_SPLIT
 config ZMK_KEYBOARD_NAME
     default "pisey"
 
-config ZMK_POINTING
-    default y
-
-config ZMK_MK_POINTING
-    default y
-
-config ZMK_SPLIT_PERIPHERAL_POINTER_DATA
-    default y
-
 config BT_MAX_CONN
   default 6
 
@@ -37,12 +28,6 @@ config ZMK_SPLIT_ROLE_CENTRAL
 
 config ZMK_SPLIT_BLE_CENTRAL_PERIPHERALS
   default 2
-
-config ZMK_POINTING
-    default y
-
-config ZMK_MK_POINTING
-    default y
 
 config BT_MAX_CONN
   default 7
