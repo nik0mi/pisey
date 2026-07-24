@@ -4,7 +4,7 @@
 / {
     chosen {
         zmk,kscan = &kscan_dongle;
-        zmk,matrix_transform = &matrix_transform0;
+        zmk,physical-layout = &physical_layout_pisey;
     };
 
     kscan_dongle: kscan_dongle {
