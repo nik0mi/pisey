@@ -1,18 +1,18 @@
 ---
 include:
-  - board: nice_nano_v2
+  - board: nice_nano
     shield: pisey_dongle
     artifact-name: pisey_dongle
 
-  - board: nice_nano_v2
+  - board: nice_nano
     shield: pisey_left
     cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
     artifact-name: pisey_left
 
-  - board: nice_nano_v2
+  - board: nice_nano
     shield: pisey_right
     cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
     artifact-name: pisey_right
 
-  - board: nice_nano_v2
+  - board: nice_nano
     shield: settings_reset
