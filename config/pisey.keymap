@@ -115,9 +115,9 @@
 
         GAME {
             bindings = <
-&kp TAB           &kp Q  &kp W  &kp E      &kp R             &kp Y  &kp U            &kp I      &kp O       &kp P
-&kp LEFT_SHIFT    &kp A  &kp S  &kp D      &kp F             &kp H  &kp J            &kp K      &kp L       &ht SQT SEMICOLON
-&kp LEFT_CONTROL  &kp Z  &kp X  &kp C      &hm_l LEFT_ALT V  &kp N  &kp M            &kp COMMA  &kp PERIOD  &ht RIGHT_BRACKET LEFT_BRACKET
+&kp TAB           &kp Q  &kp W  &kp E      &kp R             &kp Y            &kp U          &kp I      &kp O       &kp P
+&kp LEFT_SHIFT    &kp A  &kp S  &kp D      &kp F             &kp H            &kp J          &kp K      &kp L       &ht SQT SEMICOLON
+&kp LEFT_CONTROL  &kp Z  &kp X  &kp C      &hm_l LEFT_ALT V  &kp N            &kp M          &kp COMMA  &kp PERIOD  &ht RIGHT_BRACKET LEFT_BRACKET
                                 &kp SPACE  &mo 2             &ht TILDE GRAVE  &kp BACKSPACE
             >;
         };
@@ -142,8 +142,8 @@
 
         SPECIAL {
             bindings = <
-&kp F1  &kp F2   &kp F3   &kp F4   &tog 5          &mmv MOVE_LEFT  &mmv MOVE_DOWN     &mmv MOVE_UP     &mmv MOVE_RIGHT  &mkp LCLK
-&kp F5  &kp F6   &kp F7   &kp F8   &msc SCRL_UP    &kp LEFT_ARROW  &kp DOWN_ARROW     &kp UP_ARROW     &kp RIGHT_ARROW  &mkp RCLK
+&kp F1  &kp F2   &kp F3   &kp F4   &tog 5          &mmv MOVE_LEFT  &mmv MOVE_DOWN     &mmv MOVE_UP     &mmv MOVE_RIGHT  &mkp RCLK
+&kp F5  &kp F6   &kp F7   &kp F8   &msc SCRL_UP    &kp LEFT_ARROW  &kp DOWN_ARROW     &kp UP_ARROW     &kp RIGHT_ARROW  &mkp LCLK
 &kp F9  &kp F10  &kp F11  &kp F12  &msc SCRL_DOWN  &kp C_PREVIOUS  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_NEXT       &kp C_PLAY_PAUSE
                           &trans   &trans          &trans          &trans
             >;
