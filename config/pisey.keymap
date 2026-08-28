@@ -104,6 +104,7 @@
         delete {
             bindings = <&kp DELETE>;
             key-positions = <32 33>;
+            layers = <0>;
         };
     };
 
