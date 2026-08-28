@@ -98,6 +98,12 @@
         gaming {
             bindings = <&tog 1>;
             key-positions = <32 31>;
+            layers = <0 1>;
+        };
+
+        delete {
+            bindings = <&kp DELETE>;
+            key-positions = <32 33>;
         };
     };
 
@@ -133,17 +139,17 @@
 
         SYM {
             bindings = <
-&kp EXCLAMATION  &kp AT_SIGN      &kp HASH         &kp DOLLAR       &kp PERCENT      &kp CARET  &kp AMPERSAND         &kp ASTERISK           &ht TILDE GRAVE               &ht BACKSLASH PIPE
-&kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp EQUAL  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &ht LESS_THAN LEFT_BRACE      &ht UNDERSCORE MINUS
-&kp KP_NUMBER_0  &kp KP_NUMBER_9  &kp KP_NUMBER_8  &kp KP_NUMBER_7  &kp KP_NUMBER_6  &kp PLUS   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &ht GREATER_THAN RIGHT_BRACE  &ht QMARK FSLH
-                                                   &trans           &trans           &trans     &trans
+&kp EXCLAMATION  &kp AT_SIGN   &kp HASH      &kp DOLLAR    &kp PERCENT   &kp CARET  &kp AMPERSAND         &kp ASTERISK           &ht TILDE GRAVE               &ht BACKSLASH PIPE
+&kp NUMBER_1     &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &kp EQUAL  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &ht LESS_THAN LEFT_BRACE      &ht UNDERSCORE MINUS
+&kp NUMBER_0     &kp NUMBER_9  &kp NUMBER_8  &kp NUMBER_7  &kp NUMBER_6  &kp PLUS   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &ht GREATER_THAN RIGHT_BRACE  &ht QMARK FSLH
+                                             &trans        &trans        &trans     &trans
             >;
         };
 
         SPECIAL {
             bindings = <
-&kp F1  &kp F2   &kp F3   &kp F4   &tog 5          &mmv MOVE_LEFT  &mmv MOVE_DOWN     &mmv MOVE_UP     &mmv MOVE_RIGHT  &mkp RCLK
-&kp F5  &kp F6   &kp F7   &kp F8   &msc SCRL_UP    &kp LEFT_ARROW  &kp DOWN_ARROW     &kp UP_ARROW     &kp RIGHT_ARROW  &mkp LCLK
+&kp F1  &kp F2   &kp F3   &kp F4   &tog 5          &mmv MOVE_LEFT  &mmv MOVE_DOWN     &mmv MOVE_UP     &mmv MOVE_RIGHT  &mkp LCLK
+&kp F5  &kp F6   &kp F7   &kp F8   &msc SCRL_UP    &kp LEFT_ARROW  &kp DOWN_ARROW     &kp UP_ARROW     &kp RIGHT_ARROW  &mkp RCLK
 &kp F9  &kp F10  &kp F11  &kp F12  &msc SCRL_DOWN  &kp C_PREVIOUS  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_NEXT       &kp C_PLAY_PAUSE
                           &trans   &trans          &trans          &trans
             >;
