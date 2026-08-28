@@ -72,7 +72,7 @@
 
         tab {
             bindings = <&kp TAB>;
-            key-positions = <12 11>;
+            key-positions = <11 10>;
             layers = <0>;
             require-prior-idle-ms = <100>;
         };
@@ -103,7 +103,7 @@
 
         delete {
             bindings = <&kp DELETE>;
-            key-positions = <32 33>;
+            key-positions = <21 20>;
             layers = <0>;
         };
     };
